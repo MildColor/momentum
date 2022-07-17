@@ -1,0 +1,5 @@
+:root {
+  --border-color: 7px solid black;
+  --btns-radius: 10px;
+  --btns-shadow: -5px 5px 0 rgba(0, 0, 0, 0.1);
+}

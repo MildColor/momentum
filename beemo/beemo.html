@@ -4,23 +4,52 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="beemo-styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Beemo's Display</title>
   </head>
 
   <body>
     <div class="beemo">
-      <div class="weather-box"></div>
+      <div class="info-container">
+        <div class="weather-box">
+          <div class="weather__info">
+            <img src="" />
+            <div class="weather__temp"></div>
+            <div class="weather__details">
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="weather__location">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="quotes">
+          <span></span>
+          <span></span>
+        </div>
+        <div class="time">
+          <h2 id="clock"></h2>
+          <div class="dday">
+            <form id="caldday">
+              <input type="date" id="calendar" required />
+              <button type="submit" class="calbtn">Calculate!</button>
+            </form>
+          </div>
+          <div class="remaintime hidden"></div>
+        </div>
+      </div>
       <div class="beemo__body">
         <div class="beemo__display">
-          <span class="beemo__display__welcome">HI! :)</span>
+          <form id="todo-form" class="hidden">
+            <input type="text" required placeholder="Write! todo!" />
+          </form>
+          <span class="beemo__display__welcome"
+            >HI! :) <br />What is your name?</span
+          >
           <form id="login-form">
-            <input
-              required
-              maxlength="15"
-              type="text"
-              placeholder="What is your name?"
-            />
+            <input required maxlength="15" type="text" />
           </form>
         </div>
         <div class="beemo__btns">
@@ -47,16 +76,16 @@
             <div class="btns__circle"></div>
             <div class="btns__circle btns__circle-lg">
               <form>
-                <button type="submit" form="login-form">Login</button>
+                <button type="submit" form="login-form" class="loginbtn">
+                  Login
+                </button>
               </form>
             </div>
           </div>
         </div>
       </div>
       <div class="todo-box">
-        <form id="todo-form">
-          <input type="text" required placeholder="Write! todo!" />
-        </form>
+        <span>TODOLIST</span>
         <ul id="todo-list"></ul>
       </div>
     </div>
@@ -68,5 +97,9 @@
     <script src="beemo-js/beemo-background.js"></script>
     <script src="beemo-js/beemo-greetings.js"></script>
     <script src="beemo-js/beemo-todo.js"></script>
+    <script src="beemo-js/beemo-weather.js"></script>
+    <script src="beemo-js/beemo-quotes.js"></script>
+    <script src="beemo-js/beemo-clock.js"></script>
+    <script src="beemo-js/beemo-dday.js"></script>
   </body>
 </html>

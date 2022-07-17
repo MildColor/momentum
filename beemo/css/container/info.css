@@ -1,0 +1,123 @@
+.info-container {
+  background-color: white;
+  display: flex;
+  width: 350px;
+  height: 660px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  color: black;
+}
+
+.info-container {
+  flex-direction: column;
+  padding: 15px 10px;
+}
+.weather-box,
+.quotes,
+.time {
+  display: flex;
+  height: 33%;
+  color: rgba(0, 0, 0, 1);
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  margin: 5px 0;
+  transition: box-shadow 0.2s ease-in-out;
+}
+.weather-box:hover,
+.quotes:hover,
+.time:hover {
+  box-shadow: 0px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+.weather-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Jua", sans-serif;
+}
+.weather__info {
+  display: flex;
+  width: 100%;
+}
+.weather__info img,
+.weather__info div {
+  width: 33%;
+}
+.weather__info .weather__temp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.weather__temp {
+  font-size: 30px;
+  font-weight: 900;
+}
+.weather__details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+
+.weather__details span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 33%;
+  font-size: 15px;
+  font-weight: 500;
+}
+.weather__location {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.quotes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: "Cormorant SC", serif;
+}
+.quotes span:first-child {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.quotes span:last-child {
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px 0;
+  font-family: "Jua", sans-serif;
+}
+#clock {
+  font-size: 30px;
+}
+#calendar,
+.calbtn {
+  background-color: rgba(255, 255, 255, 0);
+  border: 0;
+  font-family: "Jua", sans-serif;
+  font-size: 15px;
+}
+#calendar:focus,
+#calendar:hover {
+  outline: none;
+}
+.remaintime {
+  font-size: 20px;
+}

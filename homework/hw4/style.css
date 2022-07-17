@@ -1,0 +1,15 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #0d3735;
+  font-weight: 800;
+  color: #dc143c;
+}
+h1 {
+  font-size: 60px;
+}
+.container div {
+  font-size: 45px;
+}
